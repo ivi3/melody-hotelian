@@ -1,0 +1,1 @@
+export { default as SentIcon } from './sent-icon';

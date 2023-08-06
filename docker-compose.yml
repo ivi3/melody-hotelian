@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  web:
+    container_name: melody
+    ports:
+      - 8048:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
