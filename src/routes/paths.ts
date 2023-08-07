@@ -20,7 +20,7 @@ export const paths = {
     },
 };
 // ------------Api Endpoints -------------------
-export const BASE_API_URL = `${process.env.BASE_API_URL}`;
+export const BASE_API_URL = `${process.env.API_BASE_URL}`;
 
 export const API_ENDPOINTS = {
     auth: {
@@ -29,4 +29,10 @@ export const API_ENDPOINTS = {
     },
     song: '/song',
     playlist: '/playlist'
+}
+
+
+export const NEXT_AUTH_PAGE = {
+    signIn: "/auth/login",
+    error: "/auth/login",
 }

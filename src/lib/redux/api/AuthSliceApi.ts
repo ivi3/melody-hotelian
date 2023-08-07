@@ -3,6 +3,7 @@ import {HYDRATE} from "next-redux-wrapper";
 import {ApiAddress, baseQuery} from "../../utils/api";
 import {API_ENDPOINTS} from "@/routes/paths";
 import {UserLoginRequest, UserRegisterRequest} from "@/lib/types";
+import general_api from "@/lib/redux/api/GeneralSliceApi";
 // import {HYDRATE} from "next-redux-wrapper";
 
 export const authSliceApiTag = "auth_api";
@@ -17,7 +18,7 @@ const auth_api = createApi({
     baseQuery,
     tagTypes: [authSliceApiTag],
     endpoints: (build) => ({
-        Login: build.mutation({
+        Login: build.query({
             query: (body: UserLoginRequest) => ({
                 url: ApiAddress(API_ENDPOINTS.auth.login),
                 method: "POST",
@@ -34,11 +35,15 @@ const auth_api = createApi({
     }),
 });
 
-// export endpoints for use in SSR
 export const {
-    useLoginMutation,
+    useLoginQuery,
     useRegisterMutation,
 } = auth_api;
+
+// export endpoints for use in SSR
+export const {
+    Login,
+} = auth_api.endpoints;
 
 
 export default auth_api;

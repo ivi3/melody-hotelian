@@ -1,13 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 const MusicList: React.FC = () => {
     return (
         <div className="container my-24 px-6 mx-auto">
             <section className="mb-32 text-gray-800">
                 <div className="grid lg:grid-cols-3 gap-6">
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          style={{backgroundPosition: '50%'}} data-mdb-ripple="true" data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/051.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/051.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -24,10 +25,10 @@ const MusicList: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          data-mdb-ripple="true"
                          data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/044.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/044.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -44,10 +45,10 @@ const MusicList: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          data-mdb-ripple="true"
                          data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/045.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/045.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -64,10 +65,10 @@ const MusicList: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          data-mdb-ripple="true"
                          data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/047.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/047.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -84,10 +85,10 @@ const MusicList: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          data-mdb-ripple="true"
                          data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/028.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/028.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -104,10 +105,10 @@ const MusicList: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg h-72"
                          data-mdb-ripple="true"
                          data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/049.jpg" className="w-full"/>
+                        <Image fill alt='' src="https://mdbootstrap.com/img/new/standard/nature/049.jpg"/>
                         <a href="#">
                             <div
                                 className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"

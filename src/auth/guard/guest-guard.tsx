@@ -12,15 +12,15 @@ const GuestGuard: React.FC<GuestGuardProps> = ({ children }) => {
 
   const searchParams = useSearchParams();
 
-  const returnTo = searchParams.get('returnTo')|| paths.dashboard.root;
+  const returnTo = searchParams.get('returnTo')|| paths.website.root;
 
-  const { authenticated } = useAuthContext();
+  const { isAuthenticated } = useAuthContext();
 
   const check = useCallback(() => {
-    if (authenticated) {
+    if (isAuthenticated) {
       router.replace(returnTo);
     }
-  }, [authenticated, returnTo, router]);
+  }, [isAuthenticated, returnTo, router]);
 
   useEffect(() => {
     check();
